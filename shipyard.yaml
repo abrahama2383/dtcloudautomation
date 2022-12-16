@@ -4,7 +4,7 @@ metadata:
   name: "shipyard-quality-gates"
 spec:
   stages:
-    - name: "demo"
+    - name: "quality-gate"
       sequences:
         - name: "deployment"
           tasks:
