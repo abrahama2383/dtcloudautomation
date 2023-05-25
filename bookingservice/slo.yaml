@@ -54,6 +54,30 @@ objectives:
             - <100000.000000
       weight: 1
       key_sli: false
+    - sli: connection_failure_rate
+      displayName: Connection failure rate
+      pass:
+        - criteria:
+            - '>=0.000000'
+            - <50000.000000
+      warning:
+        - criteria:
+            - '>=0.000000'
+            - <100000.000000
+      weight: 1
+      key_sli: false
+    - sli: response_time
+      displayName: Response Time
+      pass:
+        - criteria:
+            - '>=0.000000'
+            - <50000.000000
+      warning:
+        - criteria:
+            - '>=0.000000'
+            - <100000.000000
+      weight: 1
+      key_sli: false
 total_score:
     pass: 90%
     warning: 75%
